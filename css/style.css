@@ -17,15 +17,7 @@ body {
 	max-width: 10%;
 }
 
-.nav-logo img {
-	float: left;
-	height: 100%;
-	width: auto;
-}
-
 .nav-buttons {
-	height: 100%;
-	max-width: 85%;
 }
 
 .nav-container ul {
@@ -33,24 +25,24 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	background-color: black;
 }
 
 .nav-buttons li {
+	float: left;
 	background-color: #aaaaaa;
-	float: right;
-	height: 100%;
+	margin-right: 0;
+	text-align: right;
 }
 
 .nav-buttons li a {
 	display: block;
-	color: red;
+	color: #444444;
 	text-align: center;
 	text-decoration: none;
 	line-height: 80px;
 	padding: 0 25px;
 }
-
-
 
 
 .content {
