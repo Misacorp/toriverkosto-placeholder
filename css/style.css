@@ -6,46 +6,27 @@ body {
 	font-family: sans-serif;
 }
 
-.nav-container {
-	height: 80px;
-	background-color: #FFFFFF;
-	padding: 5px 10px;		/*	TOP/BOTTOM LEFT/RIGHT  --  TOP RIGHT BOTTOM LEFT */
+.nav-wrapper {
+	background-color: #DDDDDD;
 }
 
-.nav-logo {
-	height: 100%;
-	max-width: 10%;
+.nav-wrapper ul a {
+	color: black;
 }
 
-.nav-buttons {
-}
-
-.nav-container ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: black;
-}
-
-.nav-buttons li {
-	float: left;
-	background-color: #aaaaaa;
-	margin-right: 0;
-	text-align: right;
-}
-
-.nav-buttons li a {
-	display: block;
-	color: #444444;
-	text-align: center;
-	text-decoration: none;
-	line-height: 80px;
-	padding: 0 25px;
+.brand-logo img {
+	height: 64px;
+	width: auto;
 }
 
 
 .content {
 	background-color: red;
 	clear: both;
+}
+
+@media screen and (max-width: 601px) {
+	.brand-logo img {
+		height: 57px;
+	}
 }
