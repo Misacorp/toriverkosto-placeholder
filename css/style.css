@@ -3,7 +3,8 @@
 body {
 	padding: 0;
 	margin: 0;
-	background-color: white;
+  background: url('../img/bg-01-flip.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1 {
@@ -69,17 +70,9 @@ h3 {
 }
 
 .content-wrapper {
-	background: url('../img/bg-01-flip.jpg') no-repeat center center fixed;
-	background-size: cover;
 	clear: both;
 	margin-left: auto;
 	margin-right: auto;
-
-  height: -webkit-calc(100vh - 64px);
-  height: expression(100vh - 64px);
-  height: -moz-calc(100vh - 64px);
-  height: -o-calc(100vh - 64px);
-  height: calc(100vh - 64px);
 }
 
 .content {
