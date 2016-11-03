@@ -1,9 +1,11 @@
+var $ = jQuery.noConflict();
+
  /* Light YouTube Embeds by @labnol */
     /* Web: http://labnol.org/?p=27941 */
 
 $( document ).ready(function(){
     $(".button-collapse").sideNav();
-    console.log(videoContainer);
+    console.log("Site ready");
 })
 
 document.addEventListener("DOMContentLoaded",
