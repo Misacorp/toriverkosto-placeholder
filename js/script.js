@@ -1,6 +1,10 @@
  /* Light YouTube Embeds by @labnol */
     /* Web: http://labnol.org/?p=27941 */
- 
+
+$( document ).ready(function(){
+    $(".button-collapse").sideNav();
+})
+
 document.addEventListener("DOMContentLoaded",
     function() {
         var div, n,
