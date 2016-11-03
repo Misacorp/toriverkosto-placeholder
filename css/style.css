@@ -24,6 +24,23 @@ body {
 	background-color: #EEEEEE;
 }
 
+.social {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0 2px;
+}
+
+.social a:hover {
+	background-color: white !important;
+}
+
+.social-image {
+	height: 28px;
+	width: auto;
+	overflow: hidden;
+	margin-bottom: -7px;
+}
+
 .brand-logo img {
 	height: 64px;
 	width: auto;
@@ -33,6 +50,10 @@ body {
 	background: url('../img/bg-01-flip.jpg') no-repeat top center;
 	background-size: cover;
 	clear: both;
+	height: -webkit-calc(100vh - 64px);
+	height: expression(100vh - 64px);
+	height: -moz-calc(100vh - 64px);
+	height: -o-calc(100vh - 64px);
 	height: calc(100vh - 64px);
 	margin-left: auto;
 	margin-right: auto;
