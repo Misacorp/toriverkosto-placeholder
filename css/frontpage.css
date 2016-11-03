@@ -12,7 +12,6 @@
     background: #000;
     margin: 5px;
     background-color: black;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
     
 .youtube-player iframe {
@@ -73,11 +72,40 @@ body {
   background: url('../img/bg-02.jpg') no-repeat center center fixed;
 }
 
-.background-overlay {
+.body-overlay {
   background-color: rgba(0,0,0,0.6);
 }
 
+.title-logo {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: -12%;
+  margin-bottom: -8%;
+  z-index: 1;
+}
+
+.landing-footer {
+  margin-top: -30px;
+}
+
+
+@media screen and (max-width: 601px) {
+  .landing-footer {
+    margin-top: -40px;
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 992px) {
+
+  body {
+    background: #25434D;
+  }
+
+  .body-overlay {
+    background: none;
+  }
 
   .content {
     width: 100%;

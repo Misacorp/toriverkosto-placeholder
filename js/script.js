@@ -3,6 +3,7 @@
 
 $( document ).ready(function(){
     $(".button-collapse").sideNav();
+    console.log(videoContainer);
 })
 
 document.addEventListener("DOMContentLoaded",
@@ -26,9 +27,10 @@ function labnolThumb(id) {
 
 function labnolIframe() {
     var iframe = document.createElement("iframe");
-    var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+    var embed = "https://www.youtube.com/embed/ID?autoplay=1&showinfo=0&rel=0";
     iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allowfullscreen", "1");
+    /*     this.parentNode.replaceChild(iframe, this);      */
     this.parentNode.replaceChild(iframe, this);
 }
