@@ -22,23 +22,19 @@
 
  <nav>
     <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo"><img src="<?php get_template_directory_uri();?>/wp-content/themes/market-machine/img/logo/toriverkosto-logo-circle-black.png"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="kauppiaille.html">Kauppiaille</a></li>
-        <li class="social"><a href="https://www.facebook.com/toriverkosto" class="social"><img src="<?php get_template_directory_uri();?>/wp-content/themes/market-machine/img/logo/facebook-logo.png" alt="Facebook" class="social-image"></a></li>
-        <li class="social"><a href="https://twitter.com/toriverkosto" class="social"><img src="<?php get_template_directory_uri();?>/wp-content/themes/market-machine/img/logo/twitter-logo.png" alt="Twitter" class="social-image"></a></li>
-        <li class="social"><a href="https://www.linkedin.com/company/toriverkosto" class="social"><img src="<?php get_template_directory_uri();?>/wp-content/themes/market-machine/img/logo/linkedin-logo.png" alt="LinkedIn" class="social-image"></a></li>
-      </ul>
 
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="kauppiaille.html">Kauppiaille</a></li>
-        <li class="social">
-          <a href="https://www.facebook.com/toriverkosto" class="social"><img src="<?php get_template_directory_uri();?>/wp-content/themes/market-machine/img/logo/facebook-logo.png" alt="Facebook" class="social-image"></a>
-          <a href="https://twitter.com/toriverkosto" class="social"><img src="<?php get_template_directory_uri();?>/wp-content/themes/market-machine/img/logo/twitter-logo.png" alt="Twitter" class="social-image"></a>
-          <a href="https://www.linkedin.com/company/toriverkosto" class="social"><img src="<?php get_template_directory_uri();?>/wp-content/themes/market-machine/img/logo/linkedin-logo.png" alt="LinkedIn" class="social-image"></a></li>
-      </ul>
+      <a href="<?php echo home_url() ?>"><img alt="" class="brand-logo" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>"></a>
+
+      <div class="site-name"><?php echo get_bloginfo('name') ?></div>
+
+      <?php 
+          $args = array(
+            'theme_location' => 'primary'
+            );
+       ?>
+
+      <?php wp_nav_menu($args); ?>
+
+
     </div>
  </nav>
