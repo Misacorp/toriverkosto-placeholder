@@ -89,6 +89,10 @@ body {
   margin-top: -30px;
 }
 
+.content {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
 
 @media screen and (max-width: 601px) {
   .landing-footer {
