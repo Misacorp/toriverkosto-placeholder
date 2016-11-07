@@ -7,7 +7,6 @@ function marketmachine_script_enqueue() {
 
   wp_enqueue_style('materialize-css', get_template_directory_uri() . '/css/materialize.min.css', array(), '1.0', 'all');
   wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
-  wp_enqueue_style('frontpage-style', get_template_directory_uri() . '/css/frontpage.css', array(), '1.0', 'all');
   wp_enqueue_script('materialize-js', get_template_directory_uri() . '/js/materialize.min.js', array(jquery), '1.0', true);
   wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/script.js', array(jquery), '1.0', true);
 }
@@ -22,18 +21,15 @@ function textarea_temp_fix() {
 }
 
 /*	DISABLE ADMIN BAR   */
-
 add_filter('show_admin_bar', '__return_false');
 
 //	Navigation menus
-
 register_nav_menus(array(
 	'primary' => __('Primary Menu'),
 	'sidebar' => __('Sidebar Menu'),
 	));
 
 //	Header image
-
 $header_args = array (
     'default-image'         => get_template_directory_uri() . '/img/logo/toriverkosto-logo-circle-black.png',
     'header-text'           => false,
@@ -45,5 +41,23 @@ $header_args = array (
 	);
 
 add_theme_support('custom-header', $header_args);
+
+
+
+
+//  [button url="#" icon="icon-value"]Text here[/button]
+function material_button($atts, $content = null) {
+
+  extract( shortcode_atts( array(
+
+          'url' => '#',
+          'icon' => 'icon_value'
+
+  ), $atts ) );
+
+  return '<p class="button-bottom"><a class="waves-effect waves-light btn" style="background-color: #B2B4C3" href="' . $url . '"><i class="material-icons right">' . $icon . '</i>' . do_shortcode($content) . '</a></p>';
+}
+add_shortcode('button', 'material_button');
+
 
 ?>

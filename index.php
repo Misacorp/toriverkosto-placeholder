@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+  get_header();
+  wp_enqueue_style('frontpage-style', get_template_directory_uri() . '/css/frontpage.css', array(), '1.0', 'all');
+?>
 
 <main>
   <div class="body-overlay">
@@ -14,17 +17,7 @@
       
             <div class="col s12 l5 pull-l7 content-column valign-wrapper">
               <div class="valign">
-                <!--
-                  Punchline ehdotuksia:
-                    - Changing the game
-                    - Twitterin slogan
-                    - Verkkoon. Helpoisti.
-                    - Nostamassa kiertotalouden vähittäiskauppaa 2010 luvulle tms.
-                    - Toivottavasti en unohda poistaa tätä kommenttia ennen julkaisua.
-                -->
-
-
-                <!--  <div class="title">Torikoneisto</div> -->
+                
                 <img src="<?php get_template_directory_uri();?>/wp-content/themes/market-machine/img/logo/toriverkosto-logo-full.png" alt="Toriverkosto" class="title-logo">
 
                 <div class="subtitle">

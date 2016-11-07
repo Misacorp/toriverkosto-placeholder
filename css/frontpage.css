@@ -11,7 +11,7 @@
     max-width: 100%;
     background: #000;
     margin: 5px;
-    background-color: black;
+    background: transparent;
 }
     
 .youtube-player iframe {
@@ -128,5 +128,6 @@ body {
 
   .youtube-player {
     margin: 0;
+    padding-bottom: 56.23%;
   }
 }
