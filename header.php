@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="fi">
 
 <head>
   <meta charset="utf-8">
@@ -8,6 +8,8 @@
   <meta name="theme-color" content="#222222">
   <meta name="msapplication-navbutton-color" content="#222222">
   <meta name="apple-mobile-web-app-status-bar-style" content="#222222">
+  <meta name="google-site-verification" content="muBEcV2PGmrZGtRK7D3YCzlAI39ObtT54eNPMLmsjTA" />
+  
 
   <title>Toriverkosto</title>
 

@@ -120,4 +120,32 @@ function material_card($atts, $content = null) {
 }
 add_shortcode('card', 'material_card');
 
+
+function material_nolink_card($atts, $content = null) {
+
+  extract( shortcode_atts( array(
+          'image' => 'image_src',
+          'title' => 'card_title',
+          'url_text' => 'link_text'
+
+  ), $atts ) );
+
+  return '
+    <div class="card small">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="' . $image . '">
+      </div>
+      <div class="card-content grey-text text-darken-4">
+        <span class="card-title activator">' . $title . '<i class="material-icons right">more_vert</i></span>
+        <p>' . $url_text . '</p>
+      </div>
+      <div class="card-reveal grey-text text-darken-4">
+        <span class="card-title">' . $title . '<i class="material-icons right">close</i></span>
+        <p>' . $content . '</p>
+      </div>
+    </div>
+  ';
+}
+add_shortcode('nolink_card', 'material_nolink_card');
+
 ?>
