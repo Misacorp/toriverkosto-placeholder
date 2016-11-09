@@ -168,7 +168,7 @@ nav .nav-wrapper .menu-paavalikko-container ul a:hover {
   background-color: #EEEEEE;
 }
 
-nav .menu-paavalikko-container .site-name {
+nav .site-name {
   color: black;
   float: left;
   margin-left: 75px;
