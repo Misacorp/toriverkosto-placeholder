@@ -7,6 +7,14 @@ body {
   background-size: cover;
 }
 
+main {
+  min-height: -webkit-calc(100vh - 94px);
+  min-height: expression(100vh - 94px);
+  min-height: -moz-calc(100vh - 94px);
+  min-height: -o-calc(100vh - 94px);
+  min-height: calc(100vh - 94px);
+}
+
 .content-wrapper h1 {
   margin-bottom: 10px;
 }
