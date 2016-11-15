@@ -58,6 +58,7 @@ main {
   clear: both;
   margin-left: auto;
   margin-right: auto;
+  min-height: 400px;
 }
 
 .content {

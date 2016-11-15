@@ -23,7 +23,7 @@ Template Name: Frontpage Template
             <div class="col s12 l5 pull-l7 content-column valign-wrapper">
               <div class="valign">
                 
-                <img src="<?php the_field('etusivu_logo') ?>" alt="Toriverkosto" class="title-logo">
+                <img src="<?php the_field('etusivu_logo') ?>" alt="Toriverkosto logo" class="title-logo">
 
                 <div class="subtitle">
 

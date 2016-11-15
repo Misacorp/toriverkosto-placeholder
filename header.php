@@ -17,6 +17,20 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <?php wp_head(); ?>
+  <?php
+    $schema = get_post_meta(get_the_ID(), 'schema', true);
+    if(!empty($schema)) {
+      echo $schema;
+    }
+  ?>
+
+  <?php
+    $schema_video = get_post_meta(get_the_ID(), 'schema_video', true);
+    if(!empty($schema_video)) {
+      echo $schema_video;
+    }
+  ?>
+
 </head>
 
 <body>
@@ -26,7 +40,7 @@
  <nav>
     <div class="nav-wrapper">
 
-      <a href="<?php echo home_url() ?>"><img alt="" class="brand-logo" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>"></a>
+      <a href="<?php echo home_url() ?>"><img alt="Toriverkosto icon" class="brand-logo" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>"></a>
 
       <div class="site-name"><?php echo get_bloginfo('name') ?></div>
 
